@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+set -euo pipefail
+exec python3 "${CODEX_INSIGHTS_HOME:-$HOME/.local/share/codex-insights}/codex_insights.py" "$@"

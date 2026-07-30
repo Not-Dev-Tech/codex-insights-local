@@ -1,0 +1,11 @@
+🔌  MCP Tools
+
+  • context7
+    • Auth: Unsupported
+    • Tools: query-docs, resolve-library-id
+    • Resources: (none)
+
+  • example-browser
+    • Auth: Unsupported
+    • Tools: click, evaluate-script, capture-screenshot
+    • Resources: (none)

@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-insights-local"
+version = "0.2.3"
+description = "Local-first analytics for Codex CLI sessions."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+license = "MIT"
+authors = [
+  { name = "notdev" }
+]
+keywords = [
+  "codex",
+  "codex-cli",
+  "analytics",
+  "mcp",
+  "agents",
+  "llm",
+  "developer-tools"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Quality Assurance"
+]
+
+[project.urls]
+Homepage = "https://github.com/Not-Dev-Tech/codex-insights-local"
+Issues = "https://github.com/Not-Dev-Tech/codex-insights-local/issues"
+Repository = "https://github.com/Not-Dev-Tech/codex-insights-local"
+
+[project.optional-dependencies]
+test = [
+  "coverage>=7.10"
+]
+
+[project.scripts]
+codex-insights = "codex_insights:main"
+
+[tool.setuptools]
+py-modules = ["codex_insights"]
+
+[tool.coverage.run]
+source = ["codex_insights"]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true

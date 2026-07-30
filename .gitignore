@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+uv.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local Codex data
+.codex/
+usage-data/
+local-insights-*/
+latest-report.*
+profile-ledger.jsonl
+
+# Reports potentially containing prompts
+report.html
+report.md
+report.json
+sessions.csv
+prompts.csv
+tools.csv
+
+# User-specific MCP inventory
+mcp-verbose.txt
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
